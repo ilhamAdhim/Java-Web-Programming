@@ -1,0 +1,29 @@
+body{
+    font-family: 'Helvetica','Arial' sans-serif;
+    font-size:12pt;
+    margin-top: 10em;
+    background: url("../images/bg.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+.container{
+    
+}
+
+label{
+    margin-bottom: 1em;
+    border-bottom: 2px solid green;
+}
+
+button{
+    background-color: rgb(69, 69, 231);
+    border-radius: 10%;
+}
+
+#weightInput{
+    background-color: aquamarine;
+}
+
+#heightInput{
+    background-color: aqua;
+}

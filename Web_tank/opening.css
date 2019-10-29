@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+}
+
+div.tankpic {
+    position: static;
+    left:20%;
+}
+
+div img {
+    background-size: cover;
+    top: 30%;
+}
+
+a {
+    color: yellow;
+    border-radius: 20px;
+    background-color:  rgb(221, 72, 13);
+    font-size: 1em;
+    border: 10px solid rgb(221, 72, 13);
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    color: yellow;
+    text-decoration-color: brown;
+    text-decoration-style: dotted;
+    text-shadow: 2px 2px maroon;
+}

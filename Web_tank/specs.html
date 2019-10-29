@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WOTB Minimum Requirements</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<style>
+
+body{
+    background-image: url(assets/backspec.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 500%;
+    background-attachment: fixed;
+}
+
+.uptext{
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+li {
+    line-height: 3;
+    list-style-type: circle;
+}
+
+li:hover{
+    border: none black;
+    border-bottom: black;
+}
+
+.attention , .attentionandroid{
+    border: 1px solid rgba(255, 115, 0, 0.911) ;
+    background-color: rgb(34, 32, 32);
+    padding: 1.5em 2em;
+}
+
+.attention:hover , .attentionandroid:hover{
+    background-color: rgb(48, 42, 42);
+}
+
+</style>
+<body>
+
+    <div class="header">
+
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div> 
+
+    
+        <div class = "bar">
+                <a href="opening.html" title="Back to login page">
+                        <i class ='fas fa-gamepad'></i>
+
+                </a>
+
+                <a href="web.html" title = "Go to Main Page">
+                        <i class='fas fa-home'></i>
+
+                </a>
+                
+                <a href="specs.html" title = "To run WOTB ">
+                        <i class='far fa-edit'></i>
+
+                </a>
+
+                <a href="contact.html" title = "Further Information">
+                <i class='fas fa-address-book'></i>
+                </a>
+
+                <a href="about.html">About</a>
+            </div>
+        </div>
+        
+    
+        <p class="uptext">
+            <br><br><br><br><br><br>
+            Minimum Requirements 
+        </p>
+        
+    <!-- iOS Specs -->
+    <p class="iPhone">
+        <b>iOS:</b>
+        <ul>
+            <li><strong>Operating System :</strong> iOS 8 or later</li>
+            <li><strong>Supported Devices :</strong> iPad 2/iPhone 4s/iPod 5 or newer</li>
+        </ul>
+        
+        <div class="attention">
+            We are unable to support device that are jailbroken
+        </div>
+            
+        </p>
+        
+        <b>Android:</b>
+
+    <!-- Android Specs -->
+    <p class="Android">
+        <ul>
+            <li><strong>Operating System    :</strong> Android 4.1 or later</li>
+            <li><strong>GPU                 :</strong> At least Tegra 3, Mali-400MP, Adreno 320 or PowerVR SGX544</li>
+            <li><strong>Processor           :</strong> Dual-Core 1.2 GHz(1.5 preferred) minimum</li>
+            <li><strong>RAM                 :</strong> 1 GB minimum</li>
+        </ul>
+        <div class="attentionandroid">
+            Android devices with a third-party firmware or 
+            Root-rights are not officially supported
+        </div>
+        
+    </p>
+</body>
+</html>

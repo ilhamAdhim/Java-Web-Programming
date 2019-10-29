@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI Calculation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <center>
+        <div class="container" style="
+             background-color: rgba(49, 45, 45, 0.778);
+    padding:1em;
+    width:auto;
+    height:auto;">    
+            <h2 style="color: aliceblue"> Online Body Mass Index </h2>
+                <label for="weight" style="color: aliceblue"> Weight </label> <br>
+            <form action="output-bmi" method="POST">     
+                <input type="text" id="weightInput" name="weightField"><br>
+                
+                <label for="height" style="color: aliceblue"> Height </label> <br>
+                <input type="text" id="heightInput" name="heightField">
+                
+                <br><br>
+                
+                <input type="submit">
+        
+                <input type="reset" value="Reset">
+                
+            </form>
+        </div>
+    </center>
+
+</body>
+</html>

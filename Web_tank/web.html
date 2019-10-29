@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>World Of Tanks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' 
+    integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<style>
+
+    #header{
+        block-size: auto;
+    }
+
+    div.intro{
+        font-display: inline-block;
+    }
+
+    .list a img {
+        position: relative;
+        top : 0;
+        list-style-type: none;
+        overflow: auto;
+        padding:15px; 
+        width: 300px;
+        height: 200px;
+        margin: 0;
+    }
+    .list img:hover{
+        border-top: 5px solid coral;         
+        border-bottom: 5px solid rgba(197, 37, 9, 0.986); 
+        border-radius: 0 25% 0 25%;
+        opacity: 0.7;
+    }
+
+    .list {
+        position: relative;
+        overflow: auto;
+        display: inline;
+        padding: 0;
+    }
+
+    .container img, .container{
+        border: 0 5px solid black;
+        width:100%;
+        height: 100%;
+        position: relative;
+        left:0;
+        margin-bottom:10px;
+        padding: 0;
+    }
+
+    .container img:hover {
+        opacity: 0.45;
+    }
+
+    .button {
+        right: 0;
+        position: absolute;
+        bottom: 50%;
+        color: rgb(251, 7, 7);
+        background: maroon;
+        border-radius: 50% 0 0 50%;
+        padding: 20px;
+    }
+    
+    .text , .tank{
+        position: absolute;
+        bottom: 30%;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        padding: 18px;
+        text-align: center;
+      }
+
+      div.up{
+          text-decoration: none;
+          display: inline block;
+      }
+
+
+    .last{
+        font-size: 0.8em;
+    }
+
+    div.last{
+        background-color: rgb(34, 31, 31);
+        padding: 4px;
+        margin: 15px 0 0;
+        color:honeydew;
+        font-stretch: extra-expanded;
+        text-shadow: 3px red;
+        text-align: center;
+
+    }
+
+    div.last:hover{
+        background-color: rgb(44, 43, 43);
+        color:red;
+    }
+
+    @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+
+
+</style>
+<body>
+
+    <div class="header">
+
+        <div class = "bar">
+                <a href="opening.html" title="Back to login page">
+                        <i class ='fas fa-gamepad'></i>
+
+                </a>
+
+                <a href="web.html" title = "Go to Main Page">
+                        <i class='fas fa-home'></i>
+
+                </a>
+                
+                <a href="specs.html" title = "To run WOTB ">
+                        <i class='far fa-edit'></i>
+
+                </a>
+
+                <a href="contact.html" title = "Further Information">
+                        <i class='fas fa-address-book'></i>
+                </a>
+
+                <a href="about.html">About</a>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar">
+
+            </div>
+        </div>
+    </div>
+    
+
+
+    <h1 id="header"> 
+        <br><br><br>
+        LOREM IPSUM!1!
+     </h1>
+
+    <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+    </p>
+
+    <div class="intro">
+        <p>
+            New tanks are waiting to be obtained.
+        </p>
+    </div>
+
+    <!-- List of New Tanks on next update -->
+   
+        <div class="list">
+            <a href="#T-34-85">
+                <img src="assets/T-34-85.jpeg" alt="T-34-85" title="T-34-85">         
+                <div class="tank">
+                    T-34-85
+                </div>
+            </div>
+        </a>
+    
+
+        <div class="list">
+            <a href="#Tiger1">
+                <img src="assets/Tiger-1.jpeg" alt="Tiger-1" title="Tiger-1">
+                <div class="tank">
+                    Tiger 1
+                </div>
+            </div>
+        </a>
+    
+
+        <div class="list">
+            <a href="#IS5">
+                    <img src="assets/IS-5.jpeg" alt="IS-5" title="IS-5">
+                <div class="tank">
+                    IS-5
+                </div>
+            </div>
+        </a>
+
+        <a href="#STB1">
+            <div class="list">
+                <img src="assets/STB-1.jpeg" alt="STB-1" title="STB-1" >
+                <div class="tank">
+                    STB-1
+                </div>
+            </div>
+            
+        </a>
+        
+
+    <div id="T-34-85">
+        <div class="container">
+            <img src="assets/T-34-85_ww2.jpg" alt="T-34-85 past ww2">
+
+            <p class="text">
+                T-34-85
+                Final modification of the T-34 tank of 1943. A new three-man gun turret allowed a more powerful 85-mm gun to be mounted. This greatly increased the combat effectiveness of the tank compared to its predecessor, the T-34-76. A total of more than 35,000, in several variants, were produced. Today the tank is still in service in several countries.
+            </p>
+        
+                <div class="button"> 
+                    >
+                </div>
+                
+            </div>
+    </div>
+    
+    <div id="Tiger1">
+        <div class="container">
+            <img src="assets/tiger1ww2.jpg" alt="Tiger 1 past ww2" >
+
+            <p class="text">
+                Development of the Tiger I was started in 1937 by the Henschel company. Mass production began in 1942, with an eventual total of 1,354 vehicles manufactured. The tank first saw combat in the fighting for Leningrad, and Tigers were at the forefront of battles from Tunisia to Kursk. Although production was discontinued in the summer of 1944, the Tiger I continued to see action until the end of the war.
+            </p>
+                <div class="button">
+                        >
+                </div>
+        </div>    
+    </div>
+    
+    <div id="IS5">
+        <div class="container">
+            <img src="assets/IS-5 ww2.JPG" alt="IS-5 past ww2">
+
+            <p class="text">
+                The development of the vehicle was started in 1949 by the Design Bureau of the Chelyabinsk Kirov Plant under the supervision of Joseph Kotin. In 1950 a preproduction batch of 10 vehicles was launched. After the vehicle underwent all trials and received upgrades, it was adopted for service in 1953 under the designation IS-8.
+            </p>
+                <div class="button">
+                    >
+                </div>
+        
+        </div>
+            
+    </div>
+
+    <div id="STB1">
+        <div class="container">
+            <img src="assets/stb1 ww2.jpg" alt="STB-1 past ww2">
+            <p class="text">
+                In the early 1960s, Mitsubishi started development of a new tank that complied with government requirements for armament and defense. The first two prototypes of the STB-1 were manufactured in September 1969 for trials. In 1970 the prototypes were shown to journalists and participated in a military parade.
+            </p>   
+                <div class="button">
+                        >
+                </div>
+        </div>
+        
+    </div>
+
+    <div class="up">
+        <a href="#header">Back to Top</a>
+    </div>
+
+    <div class = "last">
+        © 2014–2019 Wargaming.net. Powered by BigWorld Technology™ ©<br>
+    </div>
+</body>
+</html>

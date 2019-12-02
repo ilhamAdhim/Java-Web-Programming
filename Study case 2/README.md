@@ -8,25 +8,25 @@
 
 ####Flow of the System:
 <br> 
-![Philadelphia's Magic Gardens. This place was so cool!](/images/index.png "Philadelphia's Magic Gardens")
+![Philadelphia's Magic Gardens. This place was so cool!](images/index.png "Philadelphia's Magic Gardens")
 
-![Philadelphia's Magic Gardens. This place was so cool!](/images/registration-UI.png "Philadelphia's Magic Gardens")
+![Philadelphia's Magic Gardens. This place was so cool!](images/registration-UI.png "Philadelphia's Magic Gardens")
 
-![Philadelphia's Magic Gardens. This place was so cool!](/images/regist-UI.png "Philadelphia's Magic Gardens")
+![Philadelphia's Magic Gardens. This place was so cool!](images/regist-UI.png "Philadelphia's Magic Gardens")
 
-![Philadelphia's Magic Gardens. This place was so cool!](/images/regist-UI2.png "Philadelphia's Magic Gardens")
+![Philadelphia's Magic Gardens. This place was so cool!](images/regist-UI2.png "Philadelphia's Magic Gardens")
 
-![Philadelphia's Magic Gardens. This place was so cool!](/images/Updated_index.png "Philadelphia's Magic Gardens")
+![Philadelphia's Magic Gardens. This place was so cool!](images/Updated_index.png "Philadelphia's Magic Gardens")
 
-![Philadelphia's Magic Gardens. This place was so cool!](/images/updated-login.png "Philadelphia's Magic Gardens")
+![Philadelphia's Magic Gardens. This place was so cool!](images/updated-login.png "Philadelphia's Magic Gardens")
 
 ![Philadelphia's Magic Gardens. This place was so cool!](images/updated-login-insertPass.png "Philadelphia's Magic Gardens")
 
-![Philadelphia's Magic Gardens. This place was so cool!](/images/receipt.png "Philadelphia's Magic Gardens") 
+![Philadelphia's Magic Gardens. This place was so cool!](images/receipt.png "Philadelphia's Magic Gardens") 
 
 
 
-:pushpin: ***Division Of Tasks*** : 
+:pushpin: ***Division Of Tasks*** : <br> 
 	**Azhad Saifuddin** 		->  
 	**Adhim Muhammad Ilham**	->  
 	**Ikmal bin Ishak**			->  

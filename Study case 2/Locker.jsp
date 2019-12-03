@@ -1,4 +1,8 @@
-
+<%@page import="java.util.TimeZone"%>
+<%@page import="java.util.GregorianCalendar"%>
+<%@page import="sun.util.calendar.Gregorian"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.util.Calendar"%>
 <%@page import="java.util.Date" %>
 <%int count = 3; %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -100,8 +104,12 @@ var check = function(){
 				<input type="hidden" name="duration" value="<%=duration%>">
 				<input type="hidden" name="index" value=<%=index %>>
 				<input type="hidden" name="status" value=<%=status %>>
-				<%Date cal=new Date(); %>
-				<input type="hidden" name="dateReg" value=<%=cal.toString()%>>
+				<%Date date=new Date(); %>
+				<%SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MMM-dd"); %>
+				<%SimpleDateFormat sdf2=new SimpleDateFormat("HH:mm:ss"); %>
+				<%sdf.setTimeZone(TimeZone.getTimeZone("Asia/Bangkok")); %>
+				<%sdf2.setTimeZone(TimeZone.getTimeZone("Asia/Bangkok")); %>
+				<input type="hidden" name="dateReg" value="<%=sdf.format(date)%> <%=sdf2.format(date)%>">
                        <input type="password" name="password" id="password" 
                        class="md-form-control form-control form-control-lg rounded-0" required onkeyup='check();'>
                        <span class="highlight"></span>

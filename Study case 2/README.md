@@ -1,41 +1,59 @@
-##Locker Management System
+*Locker Management System*
 <br>
-###By Al-Latif group
+**By Al-Latif group**
 <br>
 
-####Overview  : <br>
+***Overview  :*** <br>
 	This web application enables the user to define their custom password for each available locker. The charge of this locker increases gradually within a period of time given. 
 
-####Flow of the System:
+***Flow of the System:***
 <br> 
-![Philadelphia's Magic Gardens. This place was so cool!](images/index.png "Philadelphia's Magic Gardens")
+![First page](images/index.png "First page")
 
-![Philadelphia's Magic Gardens. This place was so cool!](images/registration-UI.png "Philadelphia's Magic Gardens")
+![Registration UI!](images/registration-UI.png "Registration UI")
 
-![Philadelphia's Magic Gardens. This place was so cool!](images/regist-UI.png "Philadelphia's Magic Gardens")
+![Registration UI!](images/regist-UI.png "Registration UI")
 
-![Philadelphia's Magic Gardens. This place was so cool!](images/regist-UI2.png "Philadelphia's Magic Gardens")
+![Registration UI!](images/regist-UI2.png "Registration UI")
 
-![Philadelphia's Magic Gardens. This place was so cool!](images/Updated_index.png "Philadelphia's Magic Gardens")
+![Update index!](images/Updated_index.png "Philadelphia's Magic Gardens")
 
-![Philadelphia's Magic Gardens. This place was so cool!](images/updated-login.png "Philadelphia's Magic Gardens")
+![Update index!](images/updated-login.png "Update index")
 
-![Philadelphia's Magic Gardens. This place was so cool!](images/updated-login-insertPass.png "Philadelphia's Magic Gardens")
+![Insert password!](images/updated-login-insertPass.png "Insert password")
 
-![Philadelphia's Magic Gardens. This place was so cool!](images/receipt.png "Philadelphia's Magic Gardens") 
+![Receipt!](images/receipt.png "Receipt") 
 
 
 
-:pushpin: ***Division Of Tasks*** : <br> 
-	**Azhad Saifuddin** 		->  
-	**Adhim Muhammad Ilham**	->  
+:pushpin: ***Division Of Tasks*** : <br>
+ 
+	**Azhad Saifuddin** 		->
+	<br>
+	- Define all array in insertPass
+	- Display the receipt
+
+	**Adhim Muhammad Ilham**	->
+	<br>
+		-Login and registration process for locker
+		- Accept values from main page
+	  
 	**Ikmal bin Ishak**			->  
-	**Yudha Arga Diaz Prawira** -> 
-
+	<br>
+		-Display the interface of the locker
+		-Charge calculation process 
+		
+	**Yudha Arga Diaz Prawira** ->
+	<br> 
+		-Get the index and use it to manipulate the locker
+		- Update the locker after login and register
 
 
 References : 
-	hehe
-	hehe
+	-Hands-out 
+	-https://www.markdownguide.org/basic-syntax/
+	-https://getbootstrap.com/docs/4.0/components/modal/
+	
+	
 
 

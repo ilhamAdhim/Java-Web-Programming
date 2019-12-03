@@ -10,7 +10,7 @@
 **Division Of Tasks** :
 <br>
 > **Azhad Saifuddin**:
-- Define all array in insertPass
+- Define all array in main.jsp
 - Display the receipt
 
 > **Adhim Muhammad Ilham**:
@@ -20,7 +20,7 @@
 
 > **Ikmal bin Ishak**:  
 - Display the interface of the locker
-- Charge calculation process 
+- Calculation process of price 
 
 > **Yudha Arga Diaz Prawira**:
 - Get the index and use it to manipulate the locker
@@ -49,9 +49,10 @@
 
 
 References : 
-	-Hands-out <br>
-	-https://www.markdownguide.org/basic-syntax/<br>
-	-https://getbootstrap.com/docs/4.0/components/modal/
+
+- Hands-out <br>
+- https://www.markdownguide.org/basic-syntax/<br>
+- https://getbootstrap.com/docs/4.0/components/modal/
 	
 	
 

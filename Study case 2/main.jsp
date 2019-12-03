@@ -53,6 +53,10 @@
 
 
 <style>
+body{
+	width:100%;
+}
+
 td .customBtn{
 	height:80px;
 	width:80px;
@@ -63,15 +67,24 @@ td .customBtn{
 td{
 	padding:.7em;
 }
+
+.vertical-center {
+ margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 </style>
 
-<div class="container" style="background-color:rgba(48, 48, 47,.7);">
-
+<div class="container" >
+<div class="vertical-center" style="background-color:rgba(48, 48, 47,.7);padding:2em;width:70%">
 <h1 style="color:white">
 	<center> Locker Management System </center>
 </h1>
 <center>
-<table>
+<table style="width:100%;">
 		<%int k=0; %>
 		<%for(int i=0;i<5;i++){ %>
 		<tr>
@@ -96,6 +109,7 @@ td{
 		<%} %>
 </table>
 
+</div>
 </div>
 
 </body>

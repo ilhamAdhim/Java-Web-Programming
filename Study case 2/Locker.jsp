@@ -4,7 +4,7 @@
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.util.Calendar"%>
 <%@page import="java.util.Date" %>
-<%int count = 3; %>
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -105,11 +105,11 @@ var check = function(){
 				<input type="hidden" name="index" value=<%=index %>>
 				<input type="hidden" name="status" value=<%=status %>>
 				<%Date date=new Date(); %>
-				<%SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MMM-dd"); %>
-				<%SimpleDateFormat sdf2=new SimpleDateFormat("HH:mm:ss"); %>
-				<%sdf.setTimeZone(TimeZone.getTimeZone("Asia/Bangkok")); %>
-				<%sdf2.setTimeZone(TimeZone.getTimeZone("Asia/Bangkok")); %>
-				<input type="hidden" name="dateReg" value="<%=sdf.format(date)%> <%=sdf2.format(date)%>">
+				<%SimpleDateFormat formatDate =new SimpleDateFormat("dd-MMM-yyyy"); %>
+				<%SimpleDateFormat formatTime =new SimpleDateFormat("HH:mm:ss"); %>
+				<%formatDate.setTimeZone(TimeZone.getTimeZone("Asia/Bangkok")); %>
+				<%formatTime.setTimeZone(TimeZone.getTimeZone("Asia/Bangkok")); %>
+				<input type="hidden" name="dateReg" value="<%=formatDate.format(date)%> <%=formatTime.format(date)%>">
                        <input type="password" name="password" id="password" 
                        class="md-form-control form-control form-control-lg rounded-0" required onkeyup='check();'>
                        <span class="highlight"></span>
@@ -126,8 +126,6 @@ var check = function(){
                        <label>Re-enter password</label>
                        <div id="password-validate"></div>
                    </div>
-                   
-                   
                    
                    <div class="alert alert-success" role="alert" id="showSuccess" style="display:none">
                    Password match !
@@ -156,13 +154,6 @@ var check = function(){
                        <label>Password</label>
                        <div id="username-validate"></div>
                    </div>
-                  
-                  <div class="alert alert-danger" role="alert" id="showAlert" style="display:none">
-  					Password did not match ! Attempt(s) left : 
-  					<div id="count">
-	  					<%=count %>
-  					</div>
-  					</div>
                   
 				<button type="button" value="Login" class="btn btn-info" id="btnOpenModal"  data-toggle="modal" data-target="#secondModal">
 				Check

@@ -7,29 +7,25 @@
 	This web application enables the user to define their custom password for each available locker. The charge of this locker increases gradually within a period of time given. 
 
 
- **Division Of Tasks** : <br>
- 
- <br>
+**Division Of Tasks** :
+<br>
 > **Azhad Saifuddin**:
 - Define all array in insertPass
 - Display the receipt
 
-<br>
 > **Adhim Muhammad Ilham**:
 - Login and registration process for locker
 - Accept values from main page
 - Pop ups in Locker.jsp
 
-
 > **Ikmal bin Ishak**:  
 - Display the interface of the locker
 - Charge calculation process 
 
-<br>
 > **Yudha Arga Diaz Prawira**:
-	- Get the index and use it to manipulate the locker
-	- Update the locker after login and register
-	- Set date and time to be displayed on receipt
+- Get the index and use it to manipulate the locker
+- Update the locker after login and register
+- Set date and time to be displayed on receipt
 
 
 ***Flow of the System:***

@@ -1,6 +1,6 @@
-*Locker Management System*
-<br>
-**By Al-Latif group**
+*Locker Management System**
+<br
+*By Al-Latif group*
 <br>
 
 ***Overview  :*** <br>
@@ -26,24 +26,24 @@
 
 
 
-:pushpin: ***Division Of Tasks*** : <br>
+:pushpin: *Division Of Tasks* : <br>
  
-	**Azhad Saifuddin** 		->
+	**Azhad Saifuddin**:
 	<br>
 	- Define all array in insertPass
 	- Display the receipt
 
-	**Adhim Muhammad Ilham**	->
+	**Adhim Muhammad Ilham**:
 	<br>
 		-Login and registration process for locker
 		- Accept values from main page
 	  
-	**Ikmal bin Ishak**			->  
+	**Ikmal bin Ishak**:  
 	<br>
 		-Display the interface of the locker
 		-Charge calculation process 
 		
-	**Yudha Arga Diaz Prawira** ->
+	**Yudha Arga Diaz Prawira**:
 	<br> 
 		-Get the index and use it to manipulate the locker
 		- Update the locker after login and register

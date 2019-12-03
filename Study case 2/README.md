@@ -1,5 +1,5 @@
 **Locker Management System**
-<br
+<br>
 *By Al-Latif group*
 <br>
 
@@ -9,24 +9,24 @@
 
  **Division Of Tasks** : <br>
  
-- **Azhad Saifuddin**:
-<br>
+ <br>
+> **Azhad Saifuddin**:
 - Define all array in insertPass
 - Display the receipt
 
-- **Adhim Muhammad Ilham**:
 <br>
+> **Adhim Muhammad Ilham**:
 - Login and registration process for locker
 - Accept values from main page
 - Pop ups in Locker.jsp
 
-- **Ikmal bin Ishak**:  
-<br>
+
+> **Ikmal bin Ishak**:  
 - Display the interface of the locker
 - Charge calculation process 
 
-- **Yudha Arga Diaz Prawira**:
-<br> 
+<br>
+> **Yudha Arga Diaz Prawira**:
 	- Get the index and use it to manipulate the locker
 	- Update the locker after login and register
 	- Set date and time to be displayed on receipt

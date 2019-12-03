@@ -1,10 +1,5 @@
 
-<% String status = request.getParameter("status"); %>
-<% String index = request.getParameter("index");%>
-<% String password = request.getParameter("password"); %>
-<% float duration=0 ; %>
-<% float total=0; %>
-
+<%@page import="java.util.Date" %>
 <%int count = 3; %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -42,8 +37,6 @@ var check = function(){
 	  }
 	}
 	
-	
-	
 </script>
 
 <style>
@@ -59,11 +52,17 @@ var check = function(){
 <!-- Button to open the modal -->
 <div class="container" style="background-color:rgba(48, 48, 47,.7);">
 <center style="margin-top:15em;padding:2em;">
+
+<% String status = request.getParameter("status"); %>
+<% String index = request.getParameter("index");%>
+<% float duration=0 ; %>
+<% String dateReg=""; %>
+<% String password = request.getParameter("password"); %>
 	
-	<% if(status.equals("true")){ %>
-	<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal"> Register locker <%=index %> </button>
+	<% if(status.equals("false")){ %>
+		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal"> Register locker <%=index %> </button>
 	<%}else{ %>
-	<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal"> Login to locker <%=index %> </button>
+		<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal"> Login to locker <%=index %> </button>
 	<%} %>
 
 	</center>
@@ -76,29 +75,33 @@ var check = function(){
 	      <!-- Modal Header -->
 	      <div class="modal-header">
 	        <h4 class="modal-title">
-	        
-	        <% if (status.equals("true")){ %>
-	        Register your locker
-	        <% }else{ 
-	        duration=1+(int)(Math.random()*79);%>
-	        
-	        Login to your locker
-	        <%} %>
-	        
+		        <% if (status.equals("false")){ 
+			        duration=1+(int)(Math.random()*79);
+		        %>
+			    	Register your locker
+		        <% }else{ 
+		        	dateReg=request.getParameter("dateReg");
+		        	duration=Float.valueOf(request.getParameter("duration"));%>
+		        	Login to your locker
+		        <%} %>
 	        </h4>
 	        <button type="button" class="close" data-dismiss="modal">&times;</button>
 	      </div>
 	      <!-- Modal body -->
 	      <div class="modal-body">
-	      <% if (status.equals("true")){ %>
+	      <% if (status.equals("false")){ %>
+	      
 	      <%--Registration process --%>
 	        Locker no = <%=index%> <br>
-			status = <%=status%><br>
+			status = Available<br>
 			 
 			<form action="main.jsp" style="margin-top:1em;" method="POST">
 				<div class="md-input form-group">
+				<input type="hidden" name="duration" value="<%=duration%>">
 				<input type="hidden" name="index" value=<%=index %>>
 				<input type="hidden" name="status" value=<%=status %>>
+				<%Date cal=new Date(); %>
+				<input type="hidden" name="dateReg" value=<%=cal.toString()%>>
                        <input type="password" name="password" id="password" 
                        class="md-form-control form-control form-control-lg rounded-0" required onkeyup='check();'>
                        <span class="highlight"></span>
@@ -129,12 +132,11 @@ var check = function(){
                    
                    <br>
 				<input type="submit" value="Register" class="btn btn-info" id="btnRegister">
-				<button type="button" class="btn btn-danger" data-dismiss="modal" id="btnClose">Close</button>
 			</form>
 			<% } else{%>
 	      <%--Login process with defined password on the specific locker --%>
 	      	 Locker no = <%=index%> <br>
-			status = <%=status%><br>
+			status = Reserved<br>
 			<form action="main.jsp" style="margin-top:1em;" method="POST">
 				<div class="md-input form-group">
 				<input type="hidden" name="index" value=<%=index %>>
@@ -155,10 +157,9 @@ var check = function(){
   					</div>
                   
 				<button type="button" value="Login" class="btn btn-info" id="btnOpenModal"  data-toggle="modal" data-target="#secondModal">
-				Login
+				Check
 				</button>
-				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-			</form>
+			
 			
 			<div class="modal fade" id="secondModal" style="margin-left:20em">
 	  			<div class="modal-dialog">
@@ -168,20 +169,22 @@ var check = function(){
 	        		<h4 class="modal-title"> Receipt </h4>
 	        		</div>
 	        		<%
-	        		if(duration <= 6){
-	        			total = (float)0.5*duration;
-	        		}else if(duration <= 24 && duration >= 7){
-	        			total = 2*(duration-6) + 3;
-	        		}else if(duration <= 72 && duration >= 25){
-	        			total = 5*(duration-24) +37; 
-	        		}else if(duration >= 73){
-	        			total = 287;
-	        		}else
-	        		
-	        		
+	        			float total=0;
+		        		if(duration <= 6){
+		        			total = (float)0.5*duration;
+		        		}else if(duration <= 24 && duration >= 7){
+		        			total = 2*(duration-6) + 3;
+		        		}else if(duration <= 72 && duration >= 25){
+		        			total = 5*(duration-24) +37; 
+		        		}else if(duration >= 73){
+		        			total = 287;
+		        		}else
 	        		%>
 	        		<div class="modal-body">
 	        			Locker number : <%=index %>
+	        			<br>
+	        			<hr>
+	        			Date Register : <%=dateReg %>
 	        			<br>
 	        			<hr>
 						Duration : <%=duration %> hours
@@ -192,7 +195,11 @@ var check = function(){
 						<hr>
 						 
 	        		</div>
-	        		<input type="submit" class="btn btn-danger" value="Checkout">
+	        		
+	        		<center><input style="margin-bottom: 2em;" type="submit" class="btn btn-danger" value="Checkout"></center>
+	        		<input type="hidden" name="status" value=<%=status %>>
+	        		</form>
+	        		
 	        		</div>
 	        		</div>
 	        		</div>

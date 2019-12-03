@@ -26,7 +26,7 @@
 
 
 
-:pushpin: *Division Of Tasks* : <br>
+ *Division Of Tasks* : <br>
  
 	**Azhad Saifuddin**:
 	<br>
@@ -50,8 +50,8 @@
 
 
 References : 
-	-Hands-out 
-	-https://www.markdownguide.org/basic-syntax/
+	-Hands-out <br>
+	-https://www.markdownguide.org/basic-syntax/<br>
 	-https://getbootstrap.com/docs/4.0/components/modal/
 	
 	

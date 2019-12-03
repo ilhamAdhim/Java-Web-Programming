@@ -11,25 +11,25 @@
  
 - **Azhad Saifuddin**:
 <br>
- - Define all array in insertPass
- - Display the receipt
+- Define all array in insertPass
+- Display the receipt
 
 - **Adhim Muhammad Ilham**:
 <br>
- - Login and registration process for locker
- - Accept values from main page
- - Pop ups in Locker.jsp
+- Login and registration process for locker
+- Accept values from main page
+- Pop ups in Locker.jsp
 
 - **Ikmal bin Ishak**:  
 <br>
- - Display the interface of the locker
- - Charge calculation process 
+- Display the interface of the locker
+- Charge calculation process 
 
 - **Yudha Arga Diaz Prawira**:
 <br> 
- - Get the index and use it to manipulate the locker
- - Update the locker after login and register
- - Set date and time to be displayed on receipt
+	- Get the index and use it to manipulate the locker
+	- Update the locker after login and register
+	- Set date and time to be displayed on receipt
 
 
 ***Flow of the System:***

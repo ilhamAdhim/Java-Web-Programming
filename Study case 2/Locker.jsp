@@ -1,8 +1,5 @@
 <%@page import="java.util.TimeZone"%>
-<%@page import="java.util.GregorianCalendar"%>
-<%@page import="sun.util.calendar.Gregorian"%>
 <%@page import="java.text.SimpleDateFormat"%>
-<%@page import="java.util.Calendar"%>
 <%@page import="java.util.Date" %>
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"

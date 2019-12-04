@@ -1,7 +1,6 @@
   
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ page import="java.util.Date" %>
 <%!boolean[] status=new boolean[31];%>
 <%!String[] color = new String[31]; %>
 <%!String[] password=new String[31]; %>

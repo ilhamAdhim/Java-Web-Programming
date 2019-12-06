@@ -1,18 +1,21 @@
-#PROPOSAL FOR PROJECT DEVELOPMENT#
+
+<center> 
+#PROPOSAL FOR PROJECT DEVELOPMENT
 <br>
 <br>
 <br>
-#PROJECT TITLE#
+## PROJECT TITLE
 <br>
 <br>
 <br>
 *Al - Latif*
 
+
 *Azhad Saifuddin*
 *Adhim Muhammad Ilham*
 *Ikmal bin Ishak*
 *Yudha Arga Diaz Prawira*
-
+</center>
 <hr>
 #PROPOSAL FOR PROJECT DEVELOPMENT#
 <hr>

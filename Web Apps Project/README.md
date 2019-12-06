@@ -1,23 +1,25 @@
-
 <center> 
-#PROPOSAL FOR PROJECT DEVELOPMENT
+PROPOSAL FOR PROJECT DEVELOPMENT
+=================================
 <br>
 <br>
 <br>
-## PROJECT TITLE
+PROJECT TITLE
+==============
 <br>
 <br>
 <br>
 *Al - Latif*
 
 
-*Azhad Saifuddin*
-*Adhim Muhammad Ilham*
-*Ikmal bin Ishak*
-*Yudha Arga Diaz Prawira*
+*Azhad Saifuddin* <br>
+*Adhim Muhammad Ilham*<br>
+*Ikmal bin Ishak*<br>
+*Yudha Arga Diaz Prawira*<br>
 </center>
 <hr>
-#PROPOSAL FOR PROJECT DEVELOPMENT#
+PROPOSAL FOR PROJECT DEVELOPMENT
+=================================
 <hr>
 
 - 1.1 Introduction
